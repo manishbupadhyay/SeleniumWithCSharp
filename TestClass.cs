@@ -18,6 +18,7 @@ namespace SeleniumWithCSharp
             driver.Url = "http://www.facebook.com";
             IWebElement emailTextField = driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("ermanishupadhyay@gmail.com");
+            driver.Close();
             driver.Quit();
         }
     }
